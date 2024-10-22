@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        nav {
+            position: fixed; 
+            right: 0; 
+            top: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px; 
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            border: 2px solid pink;
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+            display: block; 
+            text-align: center;
+        }
+
+        nav ul li a.active {
+            background-color: pink;  
+            color: white;           
+        }
+
+        nav ul li a:hover {
+            background-color: pink;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+</style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index2.html">Главная</a></li>
+            <li><a href="page1_2.html">Паспорт</a></li>
+            <li><a href="page2_2.html">DOM_JS</a></li>
+            <li><a href="page3_2.html">Решение задачи</a></li>
+            <li><a href="page4_2.html">Решение оригинальной задачи</a></li>
+        </ul>
+    </nav>
+    <h1>Решение алгоритмической задачи</h1>
+
+    <h3 align="center">Проверка неравенств</h3>
+    <p id="task_content">Даны вещественные числа: A, B, C. Определить, выполняется ли одно из неравенств: A < B < C или A < B > C.</p>
+    
+    <p>Значение A: <span id="a">5</span></p>
+    <p>Значение B: <span id="b">10</span></p>
+    <p>Значение C: <span id="c">15</span></p>
+    
+    <p id="verify">Оценить</p>
+    <p>Результат: <span id="result"></span></p>
+
+    <script src="task1abc.js">
+    
+        const currentLocation = location.href;
+
+        const menuItem = document.querySelectorAll('nav ul li a');
+
+        menuItem.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add('active'); 
+            }
+        });
+    </script>
+</body>
+</html>
