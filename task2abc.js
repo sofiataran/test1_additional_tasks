@@ -41,8 +41,8 @@ const elementB = document.getElementById("b");
 const elementC = document.getElementById("c");
 
 elementA.addEventListener('input', verify);
-elementB.addEventListener('keyup', verify);
-elementC.addEventListener('keyup', verify);
+elementB.addEventListener('input', verify);
+elementC.addEventListener('input', verify);
 
 const elementVerify = document.getElementById("verify");
 elementVerify.addEventListener('click', verify);
