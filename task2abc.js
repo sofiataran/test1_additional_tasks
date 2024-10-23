@@ -49,4 +49,3 @@ elementVerify.addEventListener('click', verify);
 
 const elementSend = document.getElementById("send");
 elementSend.addEventListener('click', send);
-с
