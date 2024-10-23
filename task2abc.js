@@ -14,7 +14,7 @@ function verify() {
         result = "Неравенство A < B > C выполняется";
         check = true;
     } else {
-        result = "Ни одно из неравенств не выполняется";
+        result = "Ни одно из неравенств не выполняется. Повторите ввод";
         check = false;
     }
 
@@ -29,7 +29,7 @@ function send() {
         document.getElementsByName('result')[0].value = result;
         document.getElementById("UserEnter").submit();
     } else {
-        alert("Есть недостатки. Повторите ввод");
+        alert("Ошибка. Повторите ввод");
     }
 }
 
